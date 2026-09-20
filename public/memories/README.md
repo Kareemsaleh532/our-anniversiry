@@ -1,0 +1,1 @@
+The three SVGs are original illustrated demo placeholders, not personal photographs. Replace them with your own JPG, PNG, AVIF or WebP files and edit each image path in data/birthdayData.ts. Recommended: 1200–1800px wide, under 1MB. A missing or invalid photo automatically displays an elegant fallback.
