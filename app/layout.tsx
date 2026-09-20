@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "@/styles/globals.css";
 import { birthdayData } from "@/data/birthdayData";
+import { AudioPlayer } from "@/components/AudioPlayer";
 const serif = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
@@ -24,7 +25,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={serif.variable + " " + sans.variable}>{children}</body>
+      <body className={serif.variable + " " + sans.variable}>
+        {children}
+        <AudioPlayer />
+      </body>
     </html>
   );
 }
